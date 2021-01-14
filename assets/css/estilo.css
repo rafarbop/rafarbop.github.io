@@ -64,8 +64,59 @@ div.conteudo-0{
     border: 2px solid #aacccc;
     border-radius: 40px;
     background-color: #bfdfdf;
+    padding: 1vh 1vw;
+}
+div#flexListaDesafio{
+    display: flex;
+    width: 80%;
+    margin: 4vh auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.itemFlexDesafio{
+    width: 40%;
+    margin: 2vh 2vw;
+    background-color: #aacccc;
+    padding: 1vh 1vw;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00000099;
 }
 
+a{
+    padding: 1vh;
+    border: 1px solid #10303000;
+}
+a:hover{
+    border: 1px solid #103030;
+    font-weight: 600;
+}
+
+.hideConteudo{
+    display: none;
+}
+
+.container-code{
+    display: none;
+    position: absolute;
+    width: 80vw;
+    top: 25%;
+    z-index: 1;
+}
+button.close-container-code{
+    display: none;
+    position: absolute;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border-color:  #ffffff;
+    box-shadow: 2px 2px 6px #000000;
+    font-weight: 800;
+    background-color: #103030cc;
+    color: #ffffff;
+    z-index: 2;
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -50%)
+}
 
 
 
