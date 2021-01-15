@@ -114,9 +114,19 @@ footer#footer{
 
 @media only screen and (max-width: 900px){
     :root{
-        font-size: 12pt;
+        font-size: 10pt;
     }
     #subtitulo-header{
         font-size: 1.2rem;
+    }
+    section#conteudo-principal{
+        width: 95vw;
+    }
+    .itemFlexDesafio{
+        width: 40%;
+    }
+    a.linkCadaDesafio{
+        padding: 0vh;
+        border-radius: 10px;
     }
 }
