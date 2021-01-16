@@ -55,12 +55,13 @@ div#contatos img:hover{
 }
 
 section#conteudo-principal{
-    width: 80vw;
+    width: 86vw;
     text-align: center;
     margin: 0 auto;
 }
 
 div.conteudo-0{
+    width: 100%;
     margin-bottom: 6vh;
     border: 2px solid #aacccc;
     border-radius: 40px;
@@ -75,34 +76,39 @@ div#flexListaDesafio{
     justify-content: space-around;
 }
 .itemFlexDesafio{
-    width: 20%;
-    margin: 2vh 0vw;
+    width: 16%;
+    margin: 1vh 0vw;
     background-color: #aacccc;
     padding: 0vh 1vw 4vh 1vw;
     border-radius: 20px;
     box-shadow: 0 0 10px #00000099;
 }
 p.descricaoDesafio{
-    min-height: 15vh;
+    font-size: 0.95rem;
+    min-height: 10vh;
+    line-height: 1;
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+}
+.itemFlexDesafio>h4{
+    margin: 1.5vh 0;
 }
 
 a.linkCadaDesafio{
     color: initial;
     text-decoration: none;
     padding: 1vh;
-    border: 1px solid #10303000;
     border-radius: 50%;
     background-color: #cfffff;
 }
 a.linkCadaDesafio:hover{
     color: initial;
-    border: 1px solid #103030;
     background-color:#aacccc;
+    box-shadow: 0 0 8px #00000088;
 }
 a.linkCadaDesafio:visited{
     color: initial;
 }
-
 
 
 footer#footer{
