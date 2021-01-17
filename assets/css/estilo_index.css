@@ -44,30 +44,30 @@ nav#menu-header>a:hover{
     background-image: linear-gradient(90deg,#cfffff,#aacccc,#cfffff);
 }
 
-div#contatos img{
-    margin: 0;
-    height: 1.2em;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
-}
-div#contatos img:hover{
-    background-color:#bfdfdf;
-}
-
 section#conteudo-principal{
     width: 86vw;
     text-align: center;
     margin: 0 auto;
 }
-
-div.conteudo-0{
+div.conteudo-interno{
     width: 100%;
     margin-bottom: 6vh;
     border: 2px solid #aacccc;
     border-radius: 40px;
     background-color: #bfdfdf;
-    padding: 1vh 1vw;
+    padding: 4vh 1vw;
 }
+div.conteudo-interno>a{
+    color: initial;
+    text-decoration: none;
+    padding: 1vh 6vw;
+    text-shadow: 1px 1px 2px #00000088;
+}
+div.conteudo-interno>a:hover{
+    border: 2px solid #00000088;
+    border-radius: 10px;
+}
+
 div#flexListaDesafio{
     display: flex;
     width: 100%;
