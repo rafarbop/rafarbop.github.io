@@ -78,11 +78,6 @@ div.conteudo-interno{
 
 
 footer#footer{
-    position: relative;
-    left: 0;
-    bottom: 0;
-    height: 10vh;
-    width: 100%;
     text-align: center;
     background-color: #aacccc;
     border-radius: 100% 100% 0 0;
