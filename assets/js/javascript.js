@@ -74,5 +74,25 @@ window.onload = () => {
     containerDesafios.appendChild(itemLista(34,'Calcula aumento de salário, porcetagem de aumento variável'))
     containerDesafios.appendChild(itemLista(35,'Verifica se 3 retas informadas formam um triângulo'))
 
+    containerDesafios.appendChild(itemLista(36,'Análise de financiamento de um Imóvel'))
+    containerDesafios.appendChild(itemLista(37,'Converter números decimais para outras bases'))
+    containerDesafios.appendChild(itemLista(38,'Comparar dois números'))
+    containerDesafios.appendChild(itemLista(39,'Verificar idade de uma pessoa para se alistar'))
+    containerDesafios.appendChild(itemLista(40,'Verificar se aluno passou de ano'))
+    containerDesafios.appendChild(itemLista(41,'Categorizar atletas de natação'))
+    containerDesafios.appendChild(itemLista(42,'Classificação de Triângulos'))
+    containerDesafios.appendChild(itemLista(43,'Cálculo e Avaliação de IMC'))
+    containerDesafios.appendChild(itemLista(44,'Calcular preço de acordo com forma de pagamento'))
+    containerDesafios.appendChild(itemLista(45,'Jogo do Jokenpô!'))
+    containerDesafios.appendChild(itemLista(46,'Contagem Regressiva!'))
+    containerDesafios.appendChild(itemLista(47,'Números pares entre dois números'))
+    containerDesafios.appendChild(itemLista(48,'Soma dos Números Ímpares de um intervalo!'))
+    containerDesafios.appendChild(itemLista(49,'Tabuada da soma e multiplicação!'))
+    containerDesafios.appendChild(itemLista(50,'Verificador de Números Pares!'))
+    containerDesafios.appendChild(itemLista(51,'Cálcular alguns termos de uma Progressão Aritmética!'))
+    containerDesafios.appendChild(itemLista(52,'Verificador de número primo!'))
+    containerDesafios.appendChild(itemLista(53,'Verificador de Palíndromo'))
+    
+
     
 }
