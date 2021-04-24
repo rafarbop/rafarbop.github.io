@@ -89,7 +89,7 @@ window.onload = () => {
     containerDesafios.appendChild(itemLista(48,'Soma dos Números Ímpares de um intervalo!'))
     containerDesafios.appendChild(itemLista(49,'Tabuada da soma e multiplicação!'))
     containerDesafios.appendChild(itemLista(50,'Verificador de Números Pares!'))
-    containerDesafios.appendChild(itemLista(51,'Cálcular alguns termos de uma Progressão Aritmética!'))
+    containerDesafios.appendChild(itemLista(51,'Termos de uma Progressão Artmética - I'))
     containerDesafios.appendChild(itemLista(52,'Verificador de número primo!'))
     containerDesafios.appendChild(itemLista(53,'Verificador de Palíndromo'))
     
