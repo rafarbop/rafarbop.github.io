@@ -1,0 +1,13 @@
+.hero{
+    position: relative;
+}
+
+#image_background{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    filter: blur(2px) grayscale(80%) opacity(40%);
+    z-index: -1;
+    transform: translate(-50%,-50%);
+}
