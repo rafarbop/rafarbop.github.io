@@ -1,82 +1,51 @@
 from browser import document
-from browser import html
+from browser import bind
 from browser.template import Template
 
 
+# Incluindo cabeçalho nas páginas
 Template("header").render(name="RAFAEL BRUNO")
+Template("section_home").render()
+Template("section_projetos").render()
+Template("section_sobre").render()
+Template("section_contato").render()
+
+# Hidden section
+# document["section_home"].style.display = "flex"
+# document["section_projetos"].style.display = "none"
+# document["section_sobre"].style.display = "none"
+# document["section_contato"].style.display = "none"
+
+# Menu Home
+@bind("#menu_home", "click")
+def show_home(event):
+    document["section_home"].classList.remove("is-hidden")
+    document["section_projetos"].classList.add("is-hidden")
+    document["section_sobre"].classList.add("is-hidden")
+    document["section_contato"].classList.add("is-hidden")
 
 
+# Menu de Projetos
+@bind("#menu_projetos", "click")
+def show_projetos(event):
+    document["section_home"].classList.add("is-hidden")
+    document["section_projetos"].classList.remove("is-hidden")
+    document["section_sobre"].classList.add("is-hidden")
+    document["section_contato"].classList.add("is-hidden")
 
-# header = document['header']
+# Menu Sobre
+@bind("#menu_sobre", "click")
+def show_sobre(event):
+    document["section_home"].classList.add("is-hidden")
+    document["section_projetos"].classList.add("is-hidden")
+    document["section_sobre"].classList.remove("is-hidden")
+    document["section_contato"].classList.add("is-hidden")
 
-# navbar = html.NAV(Class='navbar is-info is-fixed-top is-spaced',
-#                   role='navigation',
-#                   **{'aria-label': 'main navigation'})
 
-# navbar_brand = html.DIV(
-#     html.A(
-#         html.SPAN(
-#             "RAFAEL BRUNO",
-#             Class='title has-text-white has-text-weight-bold'
-#         ),
-#         Class='navbar-item',
-#         href='/'
-#     ) + html.A(
-#         html.SPAN(**{'aria-hidden': 'true'})
-#         + html.SPAN(**{'aria-hidden': 'true'})
-#         + html.SPAN(**{'aria-hidden': 'true'}),
-#         **{
-#             'role': 'button',
-#             'class': 'navbar-burger',
-#             'aria-label': 'menu',
-#             'aria-expanded': 'false',
-#             'data-target': 'navbarBasicExample',
-#         }
-#     ), Class='navbar-brand')
-
-# navbar_menu = html.A(
-#     html.DIV(
-#         html.A(
-#             html.BUTTON(
-#                 "HOME",
-#                 Class='button is-info is-outlined \
-#                     is-inverted has-text-weight-bold is-rounded'
-#             ),
-#             Class='navbar-item',
-#             href='/'
-#         )
-#         + html.A(
-#             html.BUTTON(
-#                 'PROJETOS',
-#                 Class='button is-info is-outlined \
-#                     is-inverted has-text-weight-bold is-rounded'
-#             ),
-#             Class='navbar-item is-size-6 has-text-weight-bold',
-#             href='/pg_python.html'),
-#         Class='navbar-start'
-#     ), Class='navbar-menu', id='navbarBasicExample') + html.A(
-#     html.DIV(
-#         html.A(
-#             html.BUTTON(
-#                 "SOBRE",
-#                 Class='button is-info is-outlined \
-#                     is-inverted has-text-weight-bold is-rounded'
-#             ),
-#             Class='navbar-item',
-#             href='/pg_sobre.html'
-#         )
-#         + html.A(
-#             html.BUTTON(
-#                 'CONTATO',
-#                 Class='button is-info is-outlined \
-#                     is-inverted has-text-weight-bold is-rounded'
-#             ),
-#             Class='navbar-item is-size- has-text-weight-bold',
-#             href='/pg_contatos.html'),
-#         Class='navbar-end'
-#     ), Class='navbar-menu', id='navbarBasicExample')
-
-# navbar <= navbar_brand
-# navbar <= navbar_menu
-
-# header <= navbar
+# Menu Contatos
+@bind("#menu_contato", "click")
+def show_contato(event):
+    document["section_home"].classList.add("is-hidden")
+    document["section_projetos"].classList.add("is-hidden")
+    document["section_sobre"].classList.add("is-hidden")
+    document["section_contato"].classList.remove("is-hidden")
