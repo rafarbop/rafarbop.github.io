@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.section-home{
+    height: 100vh;
+}
+
 #image_background{
     position: absolute;
     top: 50%;
@@ -10,4 +14,10 @@
     filter: blur(2px) grayscale(75%) opacity(60%);
     z-index: -1;
     transform: translate(-50%,-50%);
+}
+
+.fundo-cor{
+    background-color: #f2f2f266;
+    box-shadow: 0 0 4px #3298DC;
+    border-radius: 6px;
 }
