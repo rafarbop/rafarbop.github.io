@@ -5,8 +5,8 @@
     z-index: 2;
 }
 
-.section-fullheight{
-    height: 100vh;
+#section_projetos{
+    width: 100vw;
 }
 
 #image_background{
@@ -14,13 +14,18 @@
     top: 50%;
     left: 50%;
     height: 110vh;
-    filter: blur(2px) grayscale(75%) opacity(50%);
+    filter: blur(2px) grayscale(80%) opacity(65%);
     z-index: 1;
     transform: translate(-50%,-50%);
 }
 
 .fundo-cor{
-    background-color: #f2f2f288;
-    box-shadow: 0 0 4px #3298DC;
+    background-color: hsla(206, 70%, 92%, 65%);
+    box-shadow: 0 0 6px #3298DC;
     border-radius: 6px;
+}
+
+.fundo-cor .content{
+    color: hsl(204, 71%, 20%);
+    font-weight: 600;
 }
