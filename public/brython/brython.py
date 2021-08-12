@@ -2,8 +2,6 @@ from browser import document
 from browser import bind
 from browser.template import Template
 
-# Hidden Main Page
-document["mainContent"].classList.add("is-hidden")
 
 # Preloader with Banner - Close and Show Main Page
 @bind("#closebanner", "click")

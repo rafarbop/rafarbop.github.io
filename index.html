@@ -19,7 +19,7 @@
 
   <section id="preLoadBanner">
     <section id="container">
-      <main class="">
+      <main class="pb-6">
         <img height="200" src="public/img/perfil_banner.png" alt="Foto Perfil Rafael Bruno">
         <p>
           <span class="title has-text-white">
@@ -47,20 +47,21 @@
             E-mail
           </a>
         </section>
-        <span id="closebanner" class="is-size-3">
-          <i class="far fa-times-circle"></i>
-        </span>
+        <p id="closebanner" class="button has-text-weight-bold">
+          Explore Mais
+          <i class="fas fa-sign-in-alt is-size-3 ml-4"></i>
+        </p>
       </main>
     </section>
     <div id="background"></div>
   </section>
 
 
-  <main id="mainContent" class="hero is-fullheight-with-navbar">
+  <main id="mainContent" class="hero is-fullheight-with-navbar is-hidden">
 
     <header class="hero-head" id="header" b-include="header.html"></header>
     
-    <section class="hero-body has-background-info-light is-align-content-center">
+    <section class="hero-body is-align-content-center">
       <div id="section_home" b-include="home.html" class="columns is-centered"></div>
       <div id="section_projetos" b-include="projetos.html" class="columns is-multiline is-align-content-center is-hidden"></div>
     </section>

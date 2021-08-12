@@ -79,14 +79,16 @@ section#container main img{
 
 #closebanner{
     position: absolute;
-    top: -1rem;
-    right: -1rem;
+    background-color: hsl(204, 71%, 83%);
+    bottom: 0rem;
+    left: 50%;
+    transform: translate(-50%,60%);
+    box-shadow: 0 4px 6px hsl(204, 71%, 20%);
 }
 #closebanner i{
-    background-color: #f2f2f288;
-    color: hsl(0, 100%, 40%);
+    color: hsl(204, 71%, 24%);;
     border-radius: 1rem;
-    cursor: pointer
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 900px){
@@ -101,6 +103,7 @@ section#container main img{
 /* CSS Main Page and Projects */
 .hero-body{
     position: relative;
+    background-color: hsl(204, 71%, 83%);
 }
 .hero-body section{
     z-index: 2;
@@ -108,16 +111,6 @@ section#container main img{
 
 #section_projetos{
     width: 100vw;
-}
-
-#image_background{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 110vh;
-    filter: blur(2px) grayscale(80%) opacity(65%);
-    z-index: 1;
-    transform: translate(-50%,-50%);
 }
 
 .fundo-cor{
