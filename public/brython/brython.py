@@ -16,6 +16,23 @@ Template("section_home").render()
 Template("section_projetos").render()
 
 
+# Menu NavBar-Burger
+@bind("#navbarBurger", "click")
+def show_menu_burger(event):
+    document["navbarBurger"].classList.toggle('is-active')
+    document["navbarBasic"].classList.toggle('is-active')
+
+
+@bind("#closebanner", "mouseover")
+def alter_banner_in(event):
+    document["closebanner"].style.border = "4px solid hsl(204, 95%, 20%)"
+
+
+@bind("#closebanner", "mouseout")
+def alter_banner_out(event):
+    document["closebanner"].style.border = "none"
+
+
 # Hidden section
 # document["section_home"].style.display = "flex"
 # document["section_projetos"].style.display = "none"

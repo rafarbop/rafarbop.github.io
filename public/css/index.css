@@ -73,8 +73,9 @@ section#container main{
 }
 
 section#container main img{
-    height: 180px;
+    height: 15vw;
     border-radius: 50%;
+    border: 6px solid hsl(204, 95%, 30%);
 }
 
 #closebanner{
@@ -92,12 +93,25 @@ section#container main img{
 }
 
 @media only screen and (max-width: 900px){
+    body{
+        line-height: 1;
+    }
+    section#container{
+        display: flex;
+    }
     section#container main{
-        flex-direction: column;
-        width: 60vw;
-        height: 75vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80vw;
+        height: max-content;
+    }
+    section#container main img{
+        height: 25vw;
+        min-height: 150px;
     }
 }
+
 
 
 /* CSS Main Page and Projects */
