@@ -75,7 +75,7 @@ section#container main{
 section#container main img{
     height: 15vw;
     border-radius: 50%;
-    border: 6px solid hsl(204, 95%, 30%);
+    background-color: hsl(204, 71%, 83%);
 }
 
 #closebanner{
